@@ -1,0 +1,35 @@
+.main-chat
+  .info
+    .group-info
+      %p.group-info__group-name
+        test
+      %p.group-info__group-member
+        member : masa
+    .gropu-edit
+      = link_to "#", class:"group-edit__btn" do
+        Edit
+  .message-list
+    .list-info-a
+      %ul.list-info-a__info
+        %li.list-info-a__info__name
+          masa
+        %li.list-info-a__info__date
+          2019/11/20(Wed) 17:43:01
+      %ul.list-info-a__text
+        おはよう！
+    .list-info-b
+      %ul.list-info-b__info
+        %li.list-info-b__info__name
+          masa
+        %li.list-info-b__info__date
+          2019/11/20(Wed) 17:43:34
+      %ul.list-info-b__text
+        今日は夜から雨
+  .message-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "send", class: "submit-btn", placeholder: "Send"}
