@@ -113,6 +113,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding-left: 40px;
+    overflow: scroll;
 
     .upper-message {
       display: flex;
@@ -144,7 +145,6 @@
 
     .input-box {
       width: 100%;
-      position: relative;
       .new_message {
         display: flex;
       }
@@ -179,9 +179,5 @@
           line-height: 50px;
           cursor: pointer;
         }
-        ::placeholder {
-        color: #ffffff;
-        }
-  
   }
 }
