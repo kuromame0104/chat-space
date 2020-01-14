@@ -96,8 +96,6 @@ $(function(){
         });
         $('.message-list').append(insertHTML);
         $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
-        $("#new_message")[0].reset();
-        $(".form__submit").prop("disabled", false);
       }
     })
     .fail(function() {
