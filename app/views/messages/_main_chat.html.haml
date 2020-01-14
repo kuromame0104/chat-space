@@ -5,8 +5,10 @@
         = @group.name
       %ul.group-info__group-member
         Member:
+        - @group.users.each do |user|
+          #{user.name}
         %li.group-info__group-member__name
-          = @group.users.each
+
     .group-edit
       = link_to edit_group_path(@group), class:"group-edit__btn" do
         Edit
