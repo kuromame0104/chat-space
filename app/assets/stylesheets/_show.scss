@@ -1,0 +1,565 @@
+.wrapper {
+  font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+  background: #f5f5f5;
+  height: auto;
+  width: auto;
+}
+.bodyItems {
+  margin: 0 auto;
+  padding-bottom: 80px;
+  width: 700px;
+  .itemInfo  {
+    width: 700px;
+    padding: 24px 40px 40px;
+    background: #fff;
+    margin: 40px auto 0;
+    display: block;
+    .name {
+      font-size: 24px;
+      text-align: center;
+      word-wrap: break-word;
+      line-height: 1.4;
+    }
+    .mainContent {
+      margin: 16px 0 0;
+      .imageContent {
+        display: flex;
+        position: relative;
+        .image {
+          display: flex;
+          flex-direction: column;
+          width: 560px;
+          align-items: center;
+          margin: 0 auto;
+          .bigImage {
+            object-fit: cover;
+            height: 346px;
+            width: 100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("https://www-mercari-jp.akamaized.net/assets/img/card/visa.svg?238737266");
+          }
+          .smallImage {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            width: 75%;
+            li {
+              width: 25%;
+              margin: 0 10px 0 0;
+              object-fit: cover;
+              height: 87px;
+            }
+            .image01 {
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("https://www-mercari-jp.akamaized.net/assets/img/card/visa.svg?238737266");
+            }
+            .image02 {
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("https://www-mercari-jp.akamaized.net/assets/img/card/visa.svg?238737266");
+            }
+            .image03 {
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("https://www-mercari-jp.akamaized.net/assets/img/card/visa.svg?238737266");
+            }
+          }
+        }
+      }
+      .priceBox {
+        margin: 24px 0 24px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .price {
+          font-size: 46px;
+          font-weight: bold;
+          margin: 0 10px 0 0;
+        }
+        .tax {
+          font-size: 16px;
+        }
+      }
+      .buyBtn {
+        font-size: 24px;
+        line-height: 60px;
+        display: block;
+        margin: 16px 0 32px 0;
+        background: #ea352d;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .text {
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      .detail {
+        margin-bottom: 20px;
+        .detailTable{
+          width: 100%;
+          border-collapse: collapse;
+          border: 1px solid #f8f8f8;
+          .table {
+            vertical-align: middle;
+            border-color: inherit;
+            ul {
+              display: flex;
+              vertical-align: inherit;
+              border-color: inherit;
+              .title {
+                width: 20%;
+                background-color: #eee;
+                font-weight: 400;
+                border: 1px solid #dedede;
+                font-size: 14px;
+                text-align: center;
+                padding: 15px 15px;
+                p {
+                  padding: 21px 10px;
+                }
+
+              }
+              .info {
+                width: 80%;
+                padding: 15px 15px;
+                border: 1px solid #dedede;
+                font-size: 14px;
+              }
+              a {
+                text-decoration: none;
+                color: #3CCACE;
+              }
+              // li {
+              //   position: relative;
+              //   p {
+              //     position: absolute;
+              //   }
+              // }
+            }
+          }
+        }
+      }
+      .other {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          margin: 10px 0 0;
+          display: flex;
+          .btn {
+            margin-right: auto;
+            padding: 6px 10px;
+            border-radius: 40px;
+            color: #3CCACE;
+            border: 1px solid #ffb340;
+            text-decoration: none;
+          }
+        }
+        .right {
+          margin: 10px 0 0;
+          display: flex;
+          .btn {
+            font-size: 14px;
+            text-decoration: none;
+            padding: 8px 10px 6px 10px;
+            display: inline-block;
+            border-radius: 4px;
+            color: #333;
+            border: 1px solid #333;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .itemMessage {
+    padding: 24px;
+    background-color: #fff;
+    margin: 10px 0;
+    text-align: center;
+    .messageBox {
+      .messageContent {
+        p {
+          padding: 8px;
+          font-size: 14px;
+          background-color: #f8f8f8;
+          margin: 10px 0 30px 0;
+          text-align: left;
+        }
+        .btn {
+          line-height: 48px;
+          background: #3CCACE;
+          border: 1px solid #3CCACE;
+          color: #fff;
+          width: 60%;
+          font-size: 18px;
+          border-radius: 100px;
+          text-decoration: none;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-right: 130px;
+          padding-left: 130px;
+        }
+      }
+    }
+  }
+  .itemNavi {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #3CCACE;
+      text-decoration: none;
+    }
+    .prev {
+      width: 45%;
+      position: relative;
+      word-wrap: break-word;
+      i {
+        font-weight: bold;
+      }
+    }
+    .next {
+      width: 45%;
+      position: relative;
+      word-wrap: break-word;
+      text-align: right;
+      i {
+        font-weight: bold;
+      }
+    }
+  }
+  .categoryItems {
+    .categoryBtn {
+      display: block;
+      margin: 24px 0 8px;
+      color: #3CCACE;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      position: relative;
+    }
+  }
+//   .snsBox {
+//     margin: 24px auto;
+//     padding: 32px 0 24px;
+//     width: 700px;
+//     background-color: #fff;
+//     .text {
+//       text-align: center;
+//     }
+//     .snsContent {
+//       margin: 16px 0 0;
+//       text-align: center;
+//       font-size: xxx-large;
+//       .btn {
+//         display: inline-block;
+//         margin: 0 8px 8px 0;
+//         vertical-align: middle;
+//         text-align: center;
+//         .shareBtnFb {
+//           color: #3b5998;
+//         }
+//         .shareBtnTw {
+//           color: #1da1f2;
+//         }
+//         .shareBtnLine {
+//           color: #07b53b;
+//         }
+//         .shareBtnPin {
+//           color: #e60023;
+//         }
+//       }
+//     }
+//   }
+//   .otherItem {
+//     width: 700px;
+//     margin: 0 auto;
+//     h2 {
+//       font-size: 22px;
+//       margin: 24px 0 8px;
+//     }
+//     a {
+//       color: #0099e8;
+//       text-decoration: none;
+//     }
+//     .itemList {
+//       width: auto;
+//       .item {
+//         width: 220px;
+//         margin: 0 10px 20px 0;
+//         position: relative;
+//         float: left;
+//         &__image {
+//           width: 220px;
+//           height: 150px;
+//           position: relative;
+//           overflow: hidden;
+//           margin: 0;
+//           z-index: auto;
+//           background-image: image-url("icon/icon-01.png");
+//           background-position: center;
+//           background-size: contain;
+//           background-repeat: no-repeat;
+//         }
+//         .content {
+//           background-color: white;
+//           color: #333;
+//           padding: 16px;
+//           font-weight: normal;
+//           .title {
+//             overflow: hidden;
+//             line-height: 1.5;
+//             font-size: 16px;
+//             text-align: left;
+//             font-weight: normal;
+//           }
+//           .text {
+//             font-size: 16px;
+//             ul {
+//               display: flex;
+//               align-items: center;
+//               justify-content: space-between;
+//             }
+//             p {
+//               font-size: 10px;
+//               text-align: left;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .itemList::after {
+//       content: '';
+//       display: block;
+//       clear: both;
+//     }
+//   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .bodyBuy {
+//   margin: 0 auto;
+//   background-color: #fff;
+// }
+// .buyItemContent {
+//   width: 700px;
+//   margin: 0 auto;
+//   border-top: 1px solid #f5f5f5;
+//   h2 {
+//     color: black;
+//     font-size: 22px;
+//     font-weight: bold;
+//     padding: 32px;
+//     line-height: 1.5;
+//     text-align: center;
+//   }
+//   .buyItemTop {
+//     border-top: 1px solid #f5f5f5;
+//     border-bottom: 1px solid #f5f5f5;
+//     padding: 32px 16px;
+//     text-align: center;
+//     .topInner {
+//       max-width: 343px;
+//       margin: 0 auto;
+//       .topBox {
+//         display: flex;
+//         .image {
+//           height: 80px;
+//           width: 80px;
+//           min-width: 80px;
+//           display: flex;
+//           justify-content: center;
+//           -webkit-box-align: center;
+//           align-items: center;
+//           background-image: url("https://d1f5hsy4d47upe.cloudfront.net/56/5617ec5ff9c48ff370941b763e95cb85_t.jpeg");
+//           background-size: contain;
+//           background-repeat: no-repeat;
+//         }
+//         .text {
+//           margin-left: 16px;
+//           .itemTitle {
+//             font-size: 14px;
+//             margin: 0;
+//             padding: 0 0 8px;
+//             line-height: 1.5;
+//             text-align: left;
+//           }
+//           .itemPrice {
+//             margin: 0;
+//             text-align: left;
+//             font-size: 15px;
+//             font-weight: bold;
+//             .fee {
+//               font-size: 12px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .buyItemBottom {
+//     padding-bottom: 48px;
+//     .bottomInner {
+//       max-width: 343px;
+//       margin: 0 auto;
+//       .bottomBox {
+//         .priceBox {
+//           display: table;
+//           border-collapse: collapse;
+//           width: 100%;
+//           margin-top: 32px;
+//           ul {
+//             border: 0;
+//             font-weight: 600;
+//             display: flex;
+//             .price {
+//               padding: 0;
+//               text-align: right;
+//               font-size: 30px;
+//               margin-left: auto;
+//             }
+//             .priceTitle {
+//               text-align: left;
+//               font-size: 18px;
+//               margin-top: 5px;
+//             }
+//           }
+//           p {
+//             position: relative;
+//             z-index: 2;
+//             padding: 0 0 0 28px;
+//             font-size: 14px;
+//             font-weight: 400;
+//             vertical-align: middle;
+//             margin: 24px 0 32px;
+//           }
+//         }
+//         .pay {
+//           border-top: 1px solid #f5f5f5;
+//           .payBox {
+//             padding: 32px 0;
+//             max-width: 343px;
+//             margin: 0 auto;
+//             font-size: 14px;
+//             .payTitle {
+//               display: flex;
+//               h3 {
+//                 text-align: left;
+//                 margin: 0;
+//                 margin-top: 5px;
+//                 font-weight: bold;
+//               }
+//               .changeBtn {
+//                 display: block;
+//                 text-align: right;
+//                 text-decoration: none;
+//                 margin-left: auto;
+//               }
+//             }
+//             .payTitle::after {
+//               content: '';
+//               display: block;
+//               clear: both;
+//             }
+//             .payInfo {
+//               margin-top: 8px;
+//               .payIcon {
+//                 height: 15px;
+//                 width: 50px;
+//                 display: block;
+//                 text-align: right;
+//                 margin-top: 5px;
+//                 background-position: center;
+//                 background-size: contain;
+//                 background-repeat: no-repeat;
+//                 background-image: url("https://www-mercari-jp.akamaized.net/assets/img/card/visa.svg?238737266");
+//               }
+//             }
+//           }
+//         }
+//         .userAddress {
+//           padding: 32px 0;
+//           transition: all ease-out .3s;
+//           text-align: left;
+//           margin: 0;
+//           border-top: 1px solid #f5f5f5;
+//           font-size: 14px;
+//           .addressInner {
+//             max-width: 343px;
+//             margin: 0 auto;
+//             .addressTitle {
+//               display: flex;
+//               h3 {
+//                 text-align: left;
+//                 margin: 0;
+//                 margin-top: 5px;
+//                 font-weight: bold;
+//               }
+//               .changeBtn {
+//                 display: block;
+//                 text-align: right;
+//                 text-decoration: none;
+//                 margin-left: auto;
+//               }
+//             }
+//             .addressTitle::after {
+//               content: '';
+//               display: block;
+//               clear: both;
+//             }
+//             .addressInfo {
+//               display: block;
+//               text-align: left;
+//               margin: 8px 0 0;
+//               font-size: 14px;
+//               line-height: 1.4;
+//             }
+//           }
+//         }
+//         .buyBtn {
+//           display: block;
+//           width: 100%;
+//           line-height: 48px;
+//           font-size: 14px;
+//           font-weight: bold;
+//           transition: all ease-out .3s;
+//           text-align: center;
+//           border: 1px solid #888;
+//           background: #888;
+//           color: #fff;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//   }
+// }

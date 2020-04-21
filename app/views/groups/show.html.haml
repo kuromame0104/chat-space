@@ -1,0 +1,293 @@
+.wrapperItems
+  .headerItems
+  .bodyItems
+    .itemInfo
+      .name
+      %h1 ネクタイ
+      .mainContent
+        .imageContent
+          .image
+            .bigImage
+            %ul.smallImage
+              %li.image01
+              %li.image02
+              %li.image03
+        .priceBox
+          %span.price ¥1,600
+          %span.tax> （税込）送料込み
+        = link_to "購入画面に進む", "#", class: "buyBtn"
+        .text
+          アルマーニのネクタイです。<br>
+          イタリア製　made  in France<br>
+          大検幅:9cm<br>
+          <br>
+          カラー:ブルー<br>
+          <br>
+          ご不明点があればコメントよろしくお願いいたします。
+        .detail
+          .detailTable
+            .table
+              %ul.seller
+                %li.title 出品者
+                %li.info
+                  = link_to "木村壮", "#", class: "sellerName"
+              %ul.category
+                %li.title
+                  %p  カテゴリー
+                %li.info
+                  = link_to "メンズ", "#", class: "topCategory"
+                  <br>
+                  = link_to "＞小物", "#", class: "middleCategory"
+                  <br>
+                  = link_to "＞ネクタイ", "#", class: "bottomCategory"
+              %ul.brand
+                %li.title ブランド
+                %li.info
+                  = link_to "ジョルジオ・アルマーニ", "#", class: "brandName"
+              %ul.condition
+                %li.title 商品の状態
+                %li.info 目立った傷や汚れなし
+              %ul.charge
+                %li.title 配送料の負担
+                %li.info 送料込み(出品者負担)
+              %ul.method
+                %li.title 配送料の方法
+                %li.info 未定
+              %ul.area
+                %li.title 配送元地域
+                %li.info 
+                  = link_to "愛知県", "#", class: "prefecture"
+              %ul.day
+                %li.title 発送日の目安
+                %li.info 2〜3日で発送
+        .other
+          .left
+            = link_to "#", class: "btn" do
+              = icon('fa', 'star', class: 'likeBtn')
+              お気に入り 0
+          .right
+            = link_to "#",class: "btn" do
+              = icon('fa', 'flag', class: 'flagBtn')
+              不適切な商品の通報
+
+    .itemMessage
+      .messageBox
+        .messageContent
+          = form_for(url: "#", local: true, method: :get, class: "send-form") do |form|
+            = form.text_field class: "message__text"
+            = form.submit type: "submit", alt: "コメントする", class: "send-btn"
+          %p 相手のことを考え丁寧なコメントを心がけましょう。<br>不快な言葉遣いなどは利用制限や退会処分となることがあります。
+          = link_to "#", class: "btn" do
+            = icon('fa', 'comment', class: 'messageBtn') 
+            コメントする
+    .itemNavi
+      .prev
+        = link_to "#" do
+          %i ＜
+          前の商品
+      .next
+        = link_to "#" do
+          後ろの商品
+          %i ＞
+    .categoryItems
+      = link_to "ベビー・キッズをもっと見る", "#", class: "categoryBtn"
+    -# .snsBox
+    -#   .text
+    -#   .snsContent
+    -#     = link_to "#",class: "btn" do
+    -#       = icon('fab', 'facebook-square', class: 'shareBtnFb')
+    -#     = link_to "#",class: "btn" do
+    -#       = icon('fab', 'twitter-square', class: 'shareBtnTw')
+    -#     = link_to "#",class: "btn" do
+    -#       = icon('fab', 'line', class: 'shareBtnLine')
+    -#     = link_to "#",class: "btn" do
+    -#       = icon('fab', 'pinterest-square', class: 'shareBtnPin')
+    -# .otherItem
+    -#   %h2.userTitle
+    -#     = link_to "木村壮さんのその他の出品", "#"
+    -#   .itemList
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#   %h2.brandTitle
+    -#     = link_to "ジョルジオ・アルマーニのネクタイその他の出品", "#"
+    -#   .itemList
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+    -#     .item
+    -#       = link_to "#" do
+    -#         .item__image
+    -#         .content
+    -#           %h3.title
+    -#             product3
+    -#           .text
+    -#             %ul 
+    -#               %li.price 30000円
+    -#               %li.likes ★0
+    -#             %p （税込）
+  .footer
+
+
+-# .wrapper
+-#   .header
+-#   .body
+-#     .buyItemContent
+-#       %h2 購入内容の確認
+-#       .buyItemTop
+-#         .topInner
+-#           .topBox
+-#             .image
+-#             .text
+-#               %p.itemTitle ネクタイ
+-#               %p.itemPrice
+-#                 %span ¥500
+-#                 %span.fee （税込）送料込み
+-#       .buyItemBottom
+-#         .bottomInner
+-#           .bottomBox
+-#             .priceBox
+-#               %ul
+-#                 %li.priceTitle 支払い金額
+-#                 %li.price ¥500
+-#               %ul.point
+-#               -# = form_with(url: "#", local: true, method: :get, class: "checkBox") do |form|
+-#               -#   = form.submit "checkbox", class:"pointBox"
+-#               %p ポイントを利用（所持ポイント: P0）
+-#             .pay
+-#               .payBox
+-#                 .payTitle
+-#                   %h3 支払い方法
+-#                   = link_to "変更する", "#", class: "changeBtn"
+-#                 .payInfo
+-#                   クレジットカード<br>
+-#                   ************2159<br>
+-#                   有効期限 08 / 17
+-#                   .payIcon
+-#             .userAddress
+-#               .addressInner
+-#                 .addressTitle
+-#                   %h3 配送先
+-#                   = link_to "変更する", "#", class: "changeBtn"
+-#                 .addressInfo
+-#                   〒000-0000<br>
+-#                   愛知県　名古屋市　緑区<br>
+-#                   コココココ１０１０
+-#             = link_to "購入する", "#", class: "buyBtn"
+
+-#   .bottom
